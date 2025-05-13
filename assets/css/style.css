@@ -215,10 +215,6 @@ h2 {
   #services .card-body {
     min-height: 217px;
   }
-
-  .join-events-text {
-    padding-bottom: 40px;
-  }
 }
 
 /* xxl devices (large desktops, 1400px and up) */
@@ -226,9 +222,5 @@ h2 {
   /* Make all service cards the same height for consistency */
   #services .card-body {
     min-height: 195px;
-  }
-
-  .join-events-text {
-    padding-bottom: 65px;
   }
 }
