@@ -227,4 +227,8 @@ h2 {
   #services .card-body {
     min-height: 195px;
   }
+
+  .join-events-text {
+    padding-bottom: 65px;
+  }
 }

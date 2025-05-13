@@ -33,6 +33,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <!-- Link to custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
@@ -339,6 +340,102 @@
                 <p><em>Ages:</em> 8+</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Games reservation form -->
+      <section id="reservation-form" class="container section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <h2 class="display-6 text-center">Reserve a game</h2>
+            <p>
+              Reserve a board game for your next visit to Boardwalk Games. Pick
+              your challenge, and let the adventure begin! Fill out your details
+              and preferred game below, and we'll have it set aside for you when
+              you arrive.
+            </p>
+            <form action="success.html" method="GET">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                  <label for="full-name" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="full-name"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="phone-number" class="form-label"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone-number"
+                    name="phone-number"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="email" class="form-label">Email address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-lg-8 mb-3">
+                  <label for="select-game" class="form-label"
+                    >Select game</label
+                  >
+                  <select
+                    id="event-type"
+                    class="form-select"
+                    name="select-game"
+                    required
+                  >
+                    <option value="" selected>Select game</option>
+                    <option value="Galaxy Pioneers">Galaxy Pioneers</option>
+                    <option value="Mystic Woods">Mystic Woods</option>
+                    <option value="Captins's Gambit">Captins's Gambit</option>
+                    <option value="Critter Quest">Critter Quest</option>
+                    <option value="Setters of Catan">Setters of Catan</option>
+                    <option value="Monopoly">Monopoly</option>
+                    <option value="Exploding Kittens">Exploding Kittens</option>
+                    <option value="Cluedo">Cluedo</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                  <label for="datepicker" class="form-label"
+                    >Requested date:</label
+                  >
+                  <div class="input-group date" id="datepicker">
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="dd/mm/yyyy"
+                      name="requested-date"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <button
+                  type="submit"
+                  class="btn custom-button-outline mt-4 ms-auto"
+                  name="submit"
+                  value="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
