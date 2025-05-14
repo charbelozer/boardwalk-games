@@ -398,7 +398,7 @@
                     >Select game</label
                   >
                   <select
-                    id="event-type"
+                    id="select-game"
                     class="form-select"
                     name="select-game"
                     required
@@ -415,18 +415,15 @@
                   </select>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                  <label for="datepicker" class="form-label"
-                    >Requested date:</label
-                  >
-                  <div class="input-group date" id="datepicker">
-                    <input
-                      type="date"
-                      class="form-control"
-                      placeholder="dd/mm/yyyy"
-                      name="requested-date"
-                      autocomplete="off"
-                    />
-                  </div>
+                  <label for="date" class="form-label">Requested date:</label>
+                  <input
+                    id="date"
+                    type="date"
+                    class="form-control"
+                    name="date"
+                    autocomplete="off"
+                    required
+                  />
                 </div>
               </div>
               <div class="d-flex">
