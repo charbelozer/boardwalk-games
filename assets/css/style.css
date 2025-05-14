@@ -60,6 +60,7 @@ h2 {
   background-color: transparent;
   color: var(--highlight-color);
   padding: 7px 25px;
+  margin-bottom: 15px;
 }
 
 .events-button {
